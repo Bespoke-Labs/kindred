@@ -1,7 +1,5 @@
 import Head from 'next/head';
 
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { GetGreeter, SetGreeter } from '../components/contract';
 import Landing from './Landing/landing';
 import Navbar from './Navbar/Navbar';
 
