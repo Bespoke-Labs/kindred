@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+// @ts-ignore
 import Landing from './Landing/landing';
 import Navbar from './Navbar/Navbar';
 
