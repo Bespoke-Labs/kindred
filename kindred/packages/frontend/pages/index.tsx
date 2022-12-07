@@ -2,7 +2,8 @@ import Head from 'next/head';
 
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { GetGreeter, SetGreeter } from '../components/contract';
-import Landing from './landing/landing';
+import Landing from './Landing/landing';
+import Navbar from './Navbar/Navbar';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header style={{ padding: '1rem' }}>
-        <ConnectButton />
+        <Navbar />
       </header>
 
       <main
