@@ -27,8 +27,6 @@ export default function Home() {
           alignItems: 'center',
         }}
       >
-        <GetGreeter />
-        <SetGreeter />
         <Landing />
       </main>
     </div>
