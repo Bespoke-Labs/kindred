@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { GetGreeter, SetGreeter } from '../components/contract';
+import Landing from './landing/landing';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       >
         <GetGreeter />
         <SetGreeter />
+        <Landing />
       </main>
     </div>
   );
