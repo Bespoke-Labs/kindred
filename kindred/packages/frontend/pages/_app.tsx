@@ -3,6 +3,8 @@ import type { AppProps } from 'next/app';
 import NextHead from 'next/head';
 import '../styles/globals.css';
 
+import { ChakraProvider } from '@chakra-ui/react';
+
 // Imports
 import { chain, createClient, WagmiConfig, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
@@ -38,7 +40,7 @@ const hardhatChain: Chain = {
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum, hardhatChain],
-  [alchemyProvider({ apiKey: alchemyId }), publicProvider()]
+  [alchemyProvider({ alchemyId }), publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
@@ -62,7 +64,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <NextHead>
           <title>create-web3</title>
         </NextHead>
-        <Component {...pageProps} />
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
       </RainbowKitProvider>
     </WagmiConfig>
   );
