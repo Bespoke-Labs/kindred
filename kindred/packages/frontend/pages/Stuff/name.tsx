@@ -13,7 +13,7 @@ import logo from './hug.png';
 
 export default function StatsGridWithImage() {
     return (
-        <Box bgGradient={'linear(to-r, #FE532D 60%, transparent)'}
+        <Box bgGradient={'linear(to-r, #ff8266 60%, transparent)'}
             position={'relative'}>
             < Flex
                 flex={1}
