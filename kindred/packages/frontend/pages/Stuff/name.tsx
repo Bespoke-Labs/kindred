@@ -13,11 +13,13 @@ import logo from './hug.png';
 
 export default function StatsGridWithImage() {
     return (
-        <Box bg={'gray.800'} position={'relative'}>
-            <Flex
+        <Box bgGradient={'linear(to-r, #FE532D 60%, transparent)'}
+            position={'relative'}>
+            < Flex
                 flex={1}
                 zIndex={0}
-                display={{ base: 'none', lg: 'flex' }}
+                display={{ base: 'none', lg: 'flex' }
+                }
                 backgroundImage="url('/templates/stats-grid-with-image.png')"
                 backgroundSize={'cover'}
                 backgroundPosition="center"
@@ -25,13 +27,13 @@ export default function StatsGridWithImage() {
                 position={'absolute'}
                 width={'50%'}
                 insetY={0}
-                right={0}>
-                <Flex
+                right={0} >
+                {/* <Flex
                     bgGradient={'linear(to-r, gray.800 10%, transparent)'}
                     w={'full'}
                     h={'full'}
-                />
-            </Flex>
+                /> */}
+            </Flex >
             <Container maxW={'7xl'} zIndex={10} position={'relative'}>
                 <Stack direction={{ base: 'column', lg: 'row' }}>
                     <Stack
