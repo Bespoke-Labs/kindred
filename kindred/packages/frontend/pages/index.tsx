@@ -4,6 +4,7 @@ import Landing from './Landing/landing';
 import Navbar from './Navbar/Navbar';
 import Data from './Stuff/data';
 import Intro from './Stuff/name';
+import CTA from './Stuff/cta';
 
 export default function Home() {
   return (
@@ -16,8 +17,8 @@ export default function Home() {
       <header style={{ padding: '1rem' }}>
         <Navbar />
       </header>
-      <Intro />
-
+      {/* <Intro /> */}
+      <CTA />
       <Data />
 
       <main

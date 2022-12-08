@@ -32,7 +32,7 @@ function StatsCard(props: StatsCardProps) {
             rounded={'lg'}>
             <Flex justifyContent={'space-between'}>
                 <Box pl={{ base: 2, md: 4 }}>
-                    <StatLabel fontWeight={'medium'} isTruncated>
+                    <StatLabel fontWeight={'medium'}>
                         {title}
                     </StatLabel>
                     <StatNumber fontSize={'2xl'} fontWeight={'medium'}>
@@ -58,7 +58,7 @@ export default function BasicStatistics() {
                 fontSize={'4xl'}
                 py={10}
                 fontWeight={'bold'}>
-                Our company is expanding, you could be too.
+                Give you kins money with Kindred.
             </chakra.h1>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
                 <StatsCard

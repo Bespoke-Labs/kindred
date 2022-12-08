@@ -10,7 +10,9 @@ import {
     Image
 } from '@chakra-ui/react';
 import logo from './hug.png';
-
+// import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 export default function StatsGridWithImage() {
     return (
         <Box bgGradient={'linear(to-r, #FFFFFF 60%, transparent)'}
@@ -55,17 +57,35 @@ export default function StatsGridWithImage() {
                                 color={'gray.800'}
                                 mb={5}
                                 fontSize={{ base: '3xl', md: '5xl' }}>
-                                Kindred                            </Heading>
-                            <Text fontSize={'xl'} color={'gray.400'}>
-                                Kindred is a social recovery multisig dapp used to distribute funds from their wallets to family members, loved ones and friends for when they pass away.
-                            </Text>
+                                Kindred
+                            </Heading>
+                            <div className='grid-container'>
+                                <Text fontSize={'xl'} color={'gray.400'}>
+                                    Kindred is a social recovery multisig dapp used to distribute funds from their wallets to family members, loved ones and friends for when they pass away.
+                                </Text>
 
-                            <Image
-                                boxSize='500px'
-                                objectFit='cover'
-                                src='https://cdn-icons-png.flaticon.com/512/2374/2374691.png'
-                                alt='Hug'
-                            />
+                                <Image
+                                    boxSize='500px'
+                                    objectFit='cover'
+                                    src='https://cdn-icons-png.flaticon.com/512/2374/2374691.png'
+                                    alt='Hug'
+                                />
+
+                            </div>
+
+                            <Row>
+                                <Text fontSize={'xl'} color={'gray.400'}>
+                                    Kindred is a social recovery multisig dapp used to distribute funds from their wallets to family members, loved ones and friends for when they pass away.
+                                </Text>
+
+                                <Image
+                                    boxSize='500px'
+                                    objectFit='cover'
+                                    src='https://cdn-icons-png.flaticon.com/512/2374/2374691.png'
+                                    alt='Hug'
+                                />
+                            </Row>
+
                         </Box>
 
                         {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
