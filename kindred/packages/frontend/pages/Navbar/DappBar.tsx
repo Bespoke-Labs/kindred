@@ -24,7 +24,7 @@ import ColorModeToggle from '../ColorModeToggle/ColorModeToggle';
 
 import Image from 'next/image';
 
-const Links = ['Ecosystem', 'Community', 'Governance', 'Developers', 'Blog', 'FAQ', 'Jobs'];
+const Links = ['Dashboard', 'Projects', 'Team'];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
     <Link
@@ -57,57 +57,17 @@ export default function Navbar() {
                     <HStack spacing={8} alignItems={'center'}>
                         <Box><Image style={{ height: '50px', width: '50px' }} src={logo} alt={'logo'}
                         /></Box>
-
-                    </HStack>
-                    <Flex alignItems={'center'}>
                         <HStack
                             as={'nav'}
                             spacing={4}
                             display={{ base: 'none', md: 'flex' }}>
-                            {/* {Links.map((link) => (
+                            {Links.map((link) => (
                                 <NavLink key={link}>{link}</NavLink>
-                            ))} */}
-
-                            <Link px={2} py={1} rounded={'md'} _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>Ecosystem</Link>
-
-                            <Link px={2} py={1} rounded={'md'} _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>Community</Link>
-
-                            <Link px={2} py={1} rounded={'md'} _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>Governance</Link>
-
-
-
-                            <Link px={2} py={1} rounded={'md'} _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>Developers</Link>
-
-                            <Link px={2} py={1} rounded={'md'} _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>Blog</Link>
-
-                            <Link px={2} py={1} rounded={'md'} _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>FAQ</Link>
-
-                            <Link px={2} py={1} rounded={'md'} _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>Jobs</Link>
-
-
+                            ))}
                         </HStack>
-                        {/* <ConnectButton /> */}
+                    </HStack>
+                    <Flex alignItems={'center'}>
+                        <ConnectButton />
                         <ColorModeToggle />
                     </Flex>
                 </Flex>

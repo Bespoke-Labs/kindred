@@ -56,7 +56,7 @@ export default function SmallWithSocial() {
                 align={{ base: 'center', md: 'center' }}>
                 <Text>© 2022 Chakra Templates. All rights reserved</Text>
                 <Stack direction={'row'} spacing={6}>
-                    <SocialButton label={'Twitter'} href={'#'}>
+                    <SocialButton label={'Twitter'} href={'https://twitter.com/kndred_'}>
                         <FaTwitter />
                     </SocialButton>
                     <SocialButton label={'YouTube'} href={'#'}>
