@@ -9,7 +9,7 @@ import {
     SimpleGrid,
     Image
 } from '@chakra-ui/react';
-import logo from '../../public/kin_logo.png';
+import logo from './hug.png';
 
 export default function StatsGridWithImage() {
     return (
@@ -58,8 +58,12 @@ export default function StatsGridWithImage() {
                                 Kindred is a social recovery multisig dapp used to distribute funds from their wallets to family members, loved ones and friends for when they pass away.
                             </Text>
 
-                            <Image style={{ height: '50px', width: '50px' }} src={logo} alt={'logo'} />
-
+                            <Image
+                                boxSize='500px'
+                                objectFit='cover'
+                                src='https://cdn-icons-png.flaticon.com/512/2374/2374691.png'
+                                alt='Dan Abramov'
+                            />
                         </Box>
 
                         {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
