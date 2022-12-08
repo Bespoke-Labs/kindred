@@ -47,7 +47,7 @@ export default function Navbar() {
         <>
             <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-                    <IconButton
+                    {/* <IconButton
                         size={'md'}
                         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                         aria-label={'Open Menu'}
@@ -65,13 +65,13 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))}
                         </HStack>
-                    </HStack>
+                    </HStack> */}
                     <Flex alignItems={'center'}>
                         <ConnectButton />
                         <ColorModeToggle />
                     </Flex>
                 </Flex>
-
+                {/* 
                 {isOpen ? (
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
@@ -80,7 +80,7 @@ export default function Navbar() {
                             ))}
                         </Stack>
                     </Box>
-                ) : null}
+                ) : null} */}
             </Box>
         </>
     );
