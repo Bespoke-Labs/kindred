@@ -64,7 +64,7 @@ export default function StatsGridWithImage() {
                                 boxSize='500px'
                                 objectFit='cover'
                                 src='https://cdn-icons-png.flaticon.com/512/2374/2374691.png'
-                                alt='Dan Abramov'
+                                alt='Hug'
                             />
                         </Box>
 
