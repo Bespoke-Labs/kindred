@@ -13,7 +13,7 @@ import logo from './hug.png';
 
 export default function StatsGridWithImage() {
     return (
-        <Box bgGradient={'linear(to-r, #ff8266 60%, transparent)'}
+        <Box bgGradient={'linear(to-r, #FFFFFF 60%, transparent)'}
             position={'relative'}>
             < Flex
                 flex={1}
@@ -52,7 +52,7 @@ export default function StatsGridWithImage() {
                                 Technology
                             </Text> */}
                             <Heading
-                                color={'white'}
+                                color={'gray.800'}
                                 mb={5}
                                 fontSize={{ base: '3xl', md: '5xl' }}>
                                 Kindred                            </Heading>
