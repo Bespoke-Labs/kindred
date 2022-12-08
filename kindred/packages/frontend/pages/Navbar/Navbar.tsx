@@ -21,6 +21,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 import logo from '../../public/kin_logo.png';
 import ColorModeToggle from '../ColorModeToggle/ColorModeToggle';
+import LaunchDapp from '../Stuff/LaunchDapp';
 
 import Image from 'next/image';
 
@@ -68,7 +69,7 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <Link px={2} py={1} rounded={'md'} _hover={{
+                            {/* <Link px={2} py={1} rounded={'md'} _hover={{
                                 textDecoration: 'none',
                                 bg: useColorModeValue('gray.200', 'gray.700'),
                             }} href={'#'}>Ecosystem</Link>
@@ -81,7 +82,7 @@ export default function Navbar() {
                             <Link px={2} py={1} rounded={'md'} _hover={{
                                 textDecoration: 'none',
                                 bg: useColorModeValue('gray.200', 'gray.700'),
-                            }} href={'#'}>Governance</Link>
+                            }} href={'#'}>Governance</Link> */}
 
 
 
@@ -105,10 +106,12 @@ export default function Navbar() {
                                 bg: useColorModeValue('gray.200', 'gray.700'),
                             }} href={'#'}>Jobs</Link>
 
+                            <LaunchDapp />
 
                         </HStack>
                         {/* <ConnectButton /> */}
-                        <ColorModeToggle />
+                        {/* <ColorModeToggle /> */}
+
                     </Flex>
                 </Flex>
 
