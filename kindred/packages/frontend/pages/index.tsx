@@ -2,6 +2,7 @@ import Head from 'next/head';
 // @ts-ignore
 import Landing from './Landing/landing';
 import Navbar from './Navbar/Navbar';
+import Data from './Stuff/data';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <header style={{ padding: '1rem' }}>
         <Navbar />
       </header>
+      <Data />
 
       <main
         style={{
@@ -26,7 +28,6 @@ export default function Home() {
         }}
       >
         <Landing />
-
         <footer />
       </main>
     </div>

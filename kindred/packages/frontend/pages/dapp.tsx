@@ -3,6 +3,9 @@ import Head from 'next/head';
 import Landing from './Landing/landing';
 import DappBar from './Navbar/DappBar';
 
+import ApproveModal from './Stuff/ApproveModal';
+
+
 export default function Home() {
   return (
     <div className={''}>
@@ -23,9 +26,10 @@ export default function Home() {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundColor: '#ECEEFF'
         }}
       >
-        <Landing />
+        <ApproveModal />
 
         <footer />
       </main>
