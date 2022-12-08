@@ -7,7 +7,9 @@ import {
     Text,
     Heading,
     SimpleGrid,
+    Image
 } from '@chakra-ui/react';
+import logo from '../../public/kin_logo.png';
 
 export default function StatsGridWithImage() {
     return (
@@ -38,7 +40,7 @@ export default function StatsGridWithImage() {
                         justify={{ lg: 'center' }}
                         py={{ base: 4, md: 20, xl: 60 }}>
                         <Box mb={{ base: 8, md: 20 }}>
-                            <Text
+                            {/* <Text
                                 fontFamily={'heading'}
                                 fontWeight={700}
                                 textTransform={'uppercase'}
@@ -46,22 +48,21 @@ export default function StatsGridWithImage() {
                                 fontSize={'xl'}
                                 color={'gray.500'}>
                                 Technology
-                            </Text>
+                            </Text> */}
                             <Heading
                                 color={'white'}
                                 mb={5}
                                 fontSize={{ base: '3xl', md: '5xl' }}>
-                                21st century agriculture
-                            </Heading>
+                                Kindred                            </Heading>
                             <Text fontSize={'xl'} color={'gray.400'}>
-                                The NewLife™ technology allows you to monitor your crops and get
-                                complete insights at real time. The proprietary
-                                software/hardware ecosystem prevents your plants from getting
-                                neglected.
+                                Kindred is a social recovery multisig dapp used to distribute funds from their wallets to family members, loved ones and friends for when they pass away.
                             </Text>
+
+                            <Image style={{ height: '50px', width: '50px' }} src={logo} alt={'logo'} />
+
                         </Box>
 
-                        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+                        {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                             {stats.map((stat) => (
                                 <Box key={stat.title}>
                                     <Text
@@ -76,12 +77,12 @@ export default function StatsGridWithImage() {
                                     </Text>
                                 </Box>
                             ))}
-                        </SimpleGrid>
+                        </SimpleGrid> */}
                     </Stack>
                     <Flex flex={1} />
                 </Stack>
             </Container>
-        </Box>
+        </Box >
     );
 }
 
