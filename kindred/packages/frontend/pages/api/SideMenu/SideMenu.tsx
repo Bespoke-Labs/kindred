@@ -18,12 +18,13 @@ import {
 } from '@chakra-ui/react';
 import {
     FiHome,
-    FiTrendingUp,
     FiCompass,
     FiStar,
     FiSettings,
     FiMenu,
     FiBell,
+    FiSmile,
+    FiDollarSign,
 } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import { ReactText } from 'react';
@@ -38,9 +39,9 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
     { name: 'Home', icon: FiHome },
-    { name: 'Trending', icon: FiTrendingUp },
-    { name: 'Explore', icon: FiCompass },
-    { name: 'Favourites', icon: FiStar },
+    { name: 'Kin', icon: FiSmile },
+    // { name: 'Explore', icon: FiCompass },
+    { name: 'Wallet', icon: FiDollarSign },
     { name: 'Settings', icon: FiSettings },
 ];
 
