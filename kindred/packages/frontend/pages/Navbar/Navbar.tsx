@@ -2,25 +2,16 @@ import { ReactNode } from 'react';
 import {
     Box,
     Flex,
-    Avatar,
     HStack,
     Link,
     IconButton,
-    Button,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuDivider,
     useDisclosure,
     useColorModeValue,
     Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 import logo from '../../public/kin_logo.png';
-import ColorModeToggle from '../ColorModeToggle/ColorModeToggle';
 import LaunchDapp from '../Stuff/LaunchDapp';
 
 import Image from 'next/image';
@@ -109,9 +100,6 @@ export default function Navbar() {
                             <LaunchDapp />
 
                         </HStack>
-                        {/* <ConnectButton /> */}
-                        {/* <ColorModeToggle /> */}
-
                     </Flex>
                 </Flex>
 

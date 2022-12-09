@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import SideMenu from './api/SideMenu/SideMenu';
 // @ts-ignore
 import Landing from './Landing/landing';
 import DappBar from './Navbar/DappBar';
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header style={{ padding: '1rem' }}>
-        <DappBar />
+        <SideMenu />
       </header>
 
       <main
