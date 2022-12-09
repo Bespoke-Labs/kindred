@@ -162,27 +162,20 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
                 icon={<FiMenu />}
             />
 
-            <HStack spacing={8} alignItems={'center'}>
-                <Box>
-                    <Image style={{ height: '50px', width: '50px' }} src={logo} alt={'logo'} />
-                </Box>
-
-            </HStack>
-
             <HStack spacing={{ base: '0', md: '6' }}>
-                <IconButton
+                {/* <IconButton
                     size="lg"
                     variant="ghost"
                     aria-label="open menu"
                     icon={<FiBell />}
-                />
+                /> */}
                 <Flex alignItems={'center'}>
                     <Menu>
                         <ConnectButton />
                         <ColorModeToggle />
                     </Menu>
                 </Flex>
-            </HStack >
-        </Flex >
+            </HStack>
+        </Flex>
     );
 };
