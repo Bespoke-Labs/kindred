@@ -140,12 +140,13 @@ export default function SimpleCard() {
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
+                                width: '100%'
                             }}>
                                 <input style={{ margin: "10px" }} type="checkbox" />
 
                                 <img style={{ margin: "5px" }} width="30px" src="https://upload.wikimedia.org/wikipedia/en/5/53/Shiba_Inu_coin_logo.png" />
                                 <p style={{ paddingLeft: "1px" }} >605,089,334 SHIB</p>
-                                <p style={{ paddingLeft: "15 0px", paddingRight: "10px" }} >$5,588.05</p>
+                                <p style={{ textAlign: 'right', paddingRight: "10px" }} >$5,588.05</p>
                             </div>
 
                         </div>
@@ -176,11 +177,13 @@ export default function SimpleCard() {
                             // paddingLeft: "20px",
                         }}>
                             <label color='#F0F3FF'>
-                                Name:
+                                Your Kin's Address:
                                 <input
+                                    style={{ paddingLeft: '10px' }}
                                     type="text"
                                     name="name"
                                     color='#F0F3FF'
+                                    placeholder='0x1234...'
                                 // value={name}
                                 // onChange={e => setName(e.target.value)}
 
