@@ -23,6 +23,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Grid, GridItem } from '@chakra-ui/react'
 import { Inter } from '@next/font/google'
+import { width } from '@mui/system';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function SimpleCard() {
@@ -30,8 +31,8 @@ export default function SimpleCard() {
         <Flex
             minH={'100vh'}
             align={'center'}
-            justify={'center'}
-        >
+            justify={'center'}>
+
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
                 <Stack align={'center'}>
                     <Heading fontSize={'4xl'}>Approve Your Coins!</Heading>
@@ -56,40 +57,74 @@ export default function SimpleCard() {
                             <Input type="password" />
                         </FormControl> */}
 
+
                         <div style={{
                             backgroundColor: "#F0F3FF",
                             borderRadius: "16px",
-                            // paddingLeft: "20px",
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            width: '100%'
                         }}>
                             <div style={{
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
+                                justifyContent: 'flex-start',
+                                whiteSpace: 'nowrap'
                             }}>
                                 <input style={{ margin: "10px" }} type="checkbox" />
 
                                 <img style={{ margin: "5px" }} width="30px" src="https://s2.coinmarketcap.com/static/img/coins/200x200/3408.png" />
                                 <p style={{ paddingLeft: "1px" }} >150,000 USDC</p>
-                                <p style={{ paddingLeft: "80px" }} >$150,000</p>
+                            </div>
+
+                            <div style={{
+
+                                display: "flex",
+                                flexDirection: "row",
+                                alignItems: "center",
+                                width: '100%',
+                                justifyContent: 'flex-end'
+                            }}>
+                                <p style={{ paddingRight: "10px" }} >$150,000</p>
                             </div>
 
                         </div>
 
+
+
                         <div style={{
                             backgroundColor: "#F0F3FF",
                             borderRadius: "16px",
-                            // paddingLeft: "20px",
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            width: '100%'
                         }}>
+
                             <div style={{
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
+                                justifyContent: 'flex-start',
+                                whiteSpace: 'nowrap'
                             }}>
                                 <input style={{ margin: "10px" }} type="checkbox" />
 
                                 <img style={{ margin: "5px" }} width="30px" src="https://s2.coinmarketcap.com/static/img/coins/64x64/18876.png" />
                                 <p style={{ paddingLeft: "1px" }} >16,452 Ape Coin</p>
-                                <p style={{ paddingLeft: "80px" }} >$67,946.76</p>
+                            </div>
+
+                            <div style={{
+
+                                display: "flex",
+                                flexDirection: "row",
+                                alignItems: "center",
+                                width: '100%',
+                                justifyContent: 'flex-end'
+                            }}>
+                                <p style={{ paddingRight: "10px" }} >$67,946.76</p>
                             </div>
 
                         </div>
@@ -97,59 +132,108 @@ export default function SimpleCard() {
                         <div style={{
                             backgroundColor: "#F0F3FF",
                             borderRadius: "16px",
-                            // paddingLeft: "20px",
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            width: '100%'
                         }}>
+
                             <div style={{
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
+                                justifyContent: 'flex-start',
+                                whiteSpace: 'nowrap'
                             }}>
                                 <input style={{ margin: "10px" }} type="checkbox" />
 
                                 <img style={{ margin: "5px" }} width="30px" src="https://s2.coinmarketcap.com/static/img/coins/200x200/7278.png" />
                                 <p style={{ paddingLeft: "1px" }} >588 Aave</p>
-                                <p style={{ paddingLeft: "150px", paddingRight: "10px" }} >$37,490.12</p>
                             </div>
+
+
+                            <div style={{
+
+                                display: "flex",
+                                flexDirection: "row",
+                                alignItems: "center",
+                                width: '100%',
+                                justifyContent: 'flex-end'
+                            }}>
+                                <p style={{ paddingRight: "10px" }} >$37,490.12</p>
+                            </div>
+
 
                         </div>
 
                         <div style={{
                             backgroundColor: "#F0F3FF",
                             borderRadius: "16px",
-                            // paddingLeft: "20px",
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            width: '100%'
                         }}>
                             <div style={{
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
+                                justifyContent: 'flex-start',
+                                whiteSpace: 'nowrap',
+                                width: '100%'
                             }}>
                                 <input style={{ margin: "10px" }} type="checkbox" />
 
                                 <img style={{ margin: "5px" }} width="30px" src="https://464911102-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/collections%2F2TjMAeHSzwlQgcOdL48E%2Ficon%2FKWP0gk2C6bdRPliWIA6o%2Fens%20transparent%20background.png?alt=media&token=bd28b063-5a75-4971-890c-97becea09076" />
                                 <p style={{ paddingLeft: "1px" }} >1,140 ENS Token  </p>
-                                <p style={{ paddingLeft: "80px" }} >$15,710.66</p>
-                            </div>
 
+                                <div style={{
+
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "center",
+                                    width: '100%',
+                                    justifyContent: 'flex-end'
+                                }}>
+                                    <p style={{ paddingRight: "10px" }} >$15,710.66</p>
+
+                                </div>
+                            </div>
                         </div>
+
+
                         <div style={{
                             backgroundColor: "#F0F3FF",
                             borderRadius: "16px",
-                            // paddingLeft: "20px",
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
                         }}>
+
                             <div style={{
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
-                                width: '100%'
+                                justifyContent: 'flex-start',
+                                whiteSpace: 'nowrap'
                             }}>
                                 <input style={{ margin: "10px" }} type="checkbox" />
-
                                 <img style={{ margin: "5px" }} width="30px" src="https://upload.wikimedia.org/wikipedia/en/5/53/Shiba_Inu_coin_logo.png" />
                                 <p style={{ paddingLeft: "1px" }} >605,089,334 SHIB</p>
-                                <p style={{ textAlign: 'right', paddingRight: "10px" }} >$5,588.05</p>
                             </div>
 
+                            <div style={{
+
+                                display: "flex",
+                                flexDirection: "row",
+                                alignItems: "center",
+                                width: '100%',
+                                justifyContent: 'flex-end'
+                            }}>
+                                <p style={{ paddingRight: "10px" }} >$5,588.05</p>
+                            </div>
                         </div>
+
 
                     </Stack>
                 </Box>
