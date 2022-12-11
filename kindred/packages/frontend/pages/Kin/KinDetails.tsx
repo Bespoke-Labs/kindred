@@ -22,7 +22,7 @@ function KinCard(props: KinCardProps) {
             border={'1px solid'}
             borderColor={useColorModeValue('gray.800', 'gray.500')}
             rounded={'lg'}>
-            <StatLabel fontWeight={'medium'} isTruncated>
+            <StatLabel fontWeight={'medium'}>
                 {name}
             </StatLabel>
             <StatNumber fontSize={'2xl'} fontWeight={'medium'}>
