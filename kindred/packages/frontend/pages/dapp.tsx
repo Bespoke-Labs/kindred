@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import SideMenu from './api/SideMenu/SideMenu';
+import SideMenu from './SideMenu/SideMenu';
 // @ts-ignore
 import Landing from './landing/landing';
 import DappBar from './Navbar/DappBar';
