@@ -30,19 +30,20 @@ import { IconType } from 'react-icons';
 import { ReactText } from 'react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import ColorModeToggle from '@/pages/ColorModeToggle/ColorModeToggle';
-import logo from '../../../public/kin_logo.png';
+import logo from '../../public/kin_logo.png';
 import Image from 'next/image';
 
 interface LinkItemProps {
     name: string;
     icon: IconType;
+    href: string;
 }
 const LinkItems: Array<LinkItemProps> = [
-    { name: 'Home', icon: FiHome },
-    { name: 'Kin', icon: FiSmile },
+    { name: 'Home', icon: FiHome, href: '/' },
+    { name: 'Kin', icon: FiSmile, href: 'Kin' },
     // { name: 'Explore', icon: FiCompass },
-    { name: 'Wallet', icon: FiDollarSign },
-    { name: 'Settings', icon: FiSettings },
+    { name: 'Wallet', icon: FiDollarSign, href: 'Dashboard' },
+    // { name: 'Settings', icon: FiSettings, href: 'Settings' },
 ];
 
 export default function SideMenu() {
@@ -96,7 +97,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
                 </HStack>
             </Flex>
             {LinkItems.map((link) => (
-                <NavItem key={link.name} icon={link.icon}>
+                <NavItem key={link.name} icon={link.icon} href={link.name}>
                     {link.name}
                 </NavItem>
             ))}
@@ -106,11 +107,12 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 
 interface NavItemProps extends FlexProps {
     icon: IconType;
+    href: String;
     children: ReactText;
 }
-const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
+const NavItem = ({ icon, href, children, ...rest }: NavItemProps) => {
     return (
-        <Link href="#" style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+        <Link href={children} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
             <Flex
                 align="center"
                 p="4"
