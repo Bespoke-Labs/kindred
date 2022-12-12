@@ -43,9 +43,9 @@ export default function BasicStatistics() {
                 Here is your current list of Kin's
             </chakra.h1>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
-                <KinCard name={'Person 1'} stat={'50,000 people'} />
-                <KinCard name={'Person 2'} stat={'30 different countries'} />
-                <KinCard name={'Person 3'} stat={'100 different languages'} />
+                <KinCard name={'Kid 1'} stat={'$150,000'} />
+                <KinCard name={'Kid 2'} stat={'$100,000'} />
+                <KinCard name={'Friend 1'} stat={'10,000'} />
             </SimpleGrid>
         </Box>
     );
