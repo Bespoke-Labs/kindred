@@ -67,7 +67,7 @@ export default function Navbar() {
                         </HStack>
                     </HStack> */}
                     <Flex alignItems={'center'}>
-                        <ConnectButton />
+                        {/* <ConnectButton /> */}
                         <ColorModeToggle />
                     </Flex>
                 </Flex>

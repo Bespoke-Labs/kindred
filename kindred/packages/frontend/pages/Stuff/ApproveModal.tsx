@@ -29,9 +29,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function SimpleCard() {
     return (
         <Flex
-            minH={'100vh'}
+            minH={'80vh'}
             align={'center'}
-            justify={'center'}>
+            backgroundColor={'#ECEEFF'}
+            justify={'center'} >
+
 
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
                 <Stack align={'center'}>
@@ -320,16 +322,16 @@ export default function SimpleCard() {
                         <div style={{
                             backgroundColor: "#F0F3FF",
                             borderRadius: "16px",
-                            padding: "10px",
-                            margin: "0 0px",
-                            paddingRight: '30px'
+                            padding: "5px",
+                            // margin: "0 0px",
+                            // paddingRight: '30px'
                         }}>
                             <div style={{
                                 display: "flex",
                                 alignItems: "center",
                             }}>
-                                <p className={inter.className + " leftText"}>Approval of payment to kin:</p>
-                                <p className={inter.className + " rightText"} style={{ marginLeft: "auto" }}>~225,523 USDC</p>
+                                <p className={inter.className + " leftText"}>Approving Value:</p>
+                                <p className={inter.className + " rightText"} style={{ marginLeft: "auto" }}>~276,735.59 USDC</p>
                             </div>
 
                             <div style={{
@@ -337,15 +339,38 @@ export default function SimpleCard() {
                                 alignItems: "center",
                             }}>
                                 <p className={inter.className + " leftText"}>Kindred fee once dead:</p>
-                                <p className={inter.className + " rightText"} style={{ marginLeft: "auto" }}>2255.23 USDC</p>
+                                <p className={inter.className + " rightText"} style={{ marginLeft: "auto" }}>2,767.35 USDC</p>
                             </div>
 
                             <div style={{
                                 display: "flex",
                                 alignItems: "center",
                             }}>
-                                <p className={inter.className + " leftText"}>Gas Fee:     </p>
-                                <p className={inter.className + " rightText"} style={{ marginLeft: "auto" }}>0.0012 ETH</p>
+                                <div style={{
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "center",
+                                    width: '100%',
+
+                                    justifyContent: 'flex-start',
+                                    whiteSpace: 'nowrap'
+                                }}>
+                                    <p className={inter.className + " leftText"}>Gas fee:     </p>
+
+                                </div>
+
+                                <div style={{
+
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "center",
+                                    width: '100%',
+                                    justifyContent: 'flex-end'
+                                }}>
+                                    <p className={inter.className + " rightText"} style={{ marginLeft: "auto" }}>0.0012 ETH</p>
+
+                                </div>
+
                             </div>
                         </div>
 
