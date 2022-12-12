@@ -20,7 +20,9 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,300;0,500,700;0,900;1,400&family=Roboto:wght@700&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
       </Head>
       <header style={{ padding: '' }}>
-        <SideMenu />
+        <div id="side-menu">
+          <SideMenu />
+        </div>
       </header>
 
 
