@@ -40,9 +40,9 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
     { name: 'Home', icon: FiHome, href: '/' },
-    { name: 'Kin', icon: FiSmile, href: 'Kin' },
+    { name: 'Kin', icon: FiSmile, href: '/kin' },
     // { name: 'Explore', icon: FiCompass },
-    { name: 'Wallet', icon: FiDollarSign, href: 'Dashboard' },
+    { name: 'Dashboard', icon: FiDollarSign, href: '/dashboard' },
     // { name: 'Settings', icon: FiSettings, href: 'Settings' },
 ];
 
@@ -97,7 +97,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
                 </HStack>
             </Flex>
             {LinkItems.map((link) => (
-                <NavItem key={link.name} icon={link.icon} href={link.name}>
+                <NavItem key={link.name} icon={link.icon} href={link.href}>
                     {link.name}
                 </NavItem>
             ))}
@@ -112,7 +112,7 @@ interface NavItemProps extends FlexProps {
 }
 const NavItem = ({ icon, href, children, ...rest }: NavItemProps) => {
     return (
-        <Link href={'#'} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+        <Link href={href.toString()} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
             <Flex
                 align="center"
                 p="4"
